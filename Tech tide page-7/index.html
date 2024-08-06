@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive agency landing page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="assets\js\click.js"></script>
+    <script src="assets\js\slider.js"></script>
+    <script src="assets\js\submenu.js"></script>
+    <script src="assets\js\blog.js"></script>
+    <script src="assets\js\saying.js"></script>
+    <script src="assets\js\dropdown.js"></script>
+    <script src="assets\js\swiper.js"></script>
+    
+</head>
+<script>
+    
+</script>
+<body class="font-gilroy">
+
+    <nav class="max-w-full h-auto bg-white flex justify-between  items-center navbar md:mx-0  mx-6">
+        <a href="" class="flex md:mx-10 2xl:mx-40 items-center ">
+            <img class="h-auto w-10 md:w-auto" src="assets\images\Frame.jpg" alt="">
+            <h2 class="md:mb- py-2 text-2xl md:text-4xl text-black font-medium">TechTide</h2>
+        </a>
+
+        <div class="hidden 2xl:block">
+            <ul class="list-none flex text-black justify-center items-center gap-4 2xl:gap-8 text-base font-medium">
+                <li class="home active relative group" id="home-menu">
+                    <a href="#" class="nav-link flex items-center text-base font-medium">
+                      HOME
+                      <img src="assets\images\arrow-down.png" alt="" class="ml-1">
+                    </a>
+                    <ul id="home-submenu1" class="py-2 max-h-80 overflow-y-auto submenu absolute hidden bg-white shadow-md mt-1 left-0">
+                        
+                        <!-- ... other menu items ... -->
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 01</a></li>
+                        <li><a href="#" class="block px-4 py-2   font-medium">HOME 02</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 03</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 04</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 05</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 06</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 07</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 08</a></li>
+                        <li><a href="#" class="block px-4 py-2 font-medium">HOME 09</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 10</a></li>                      
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 11</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 12</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 13</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 14</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 15</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 16</a></li>
+                        <li><a href="#" class="block px-4 py-2 font-medium">HOME 17</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 18</a></li>
+                    
+                    </ul>
+                </li>
+                
+                
+                <li class="about">
+                    <a href="#about" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="services">
+                    <a href="#services" class="nav-link">SERVICES</a>
+                </li>
+                <li class="portfolio">
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="price">
+                    <a href="#price" class="nav-link">PRICING</a>
+                </li>
+                <li class="blog">
+                    <a href="#blog" class="nav-link">BLOG</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hidden 2xl:block  2xl:mr-40 mr-20 mx-4 px-2 py-2 rounded cursor-pointer  text-base font-semibold" ">
+            <button class=" rounded-lg py-3 px-11 text-gradient-to-b from-custom-red to-custom-orange text-red-500
+            font-semibold login btn-custom">Login</button>
+            <button class=" rounded-lg py-3 px-6 ml-2 text-white text-base font-semibold custom-gradient btn-custom">Get
+                Started</button>
+        </div>
+
+        <div class="2xl:hidden block md:mr-10 sm:mx-1">
+            <a class="text-4xl text-black" href="#" id="hamburgerMenu">&#8801;</a>
+        </div>
+        <div id="dropdownMenu" class="hidden">
+            <ul class="list-none text-black text-base font-medium p-4">
+                <li class="home active relative " id="home-menu">
+                    <a href="#" class="nav-link flex items-center text-base font-medium px-4 py-2">
+                      HOME
+                      <img src="assets\images\arrow-down.png" alt="" class="ml-1">
+                    </a>
+                    <ul id="home-submenu    " class="py-2 max-h-80 overflow-y-auto submenu absolute hidden bg-white shadow-md mt-1 left-0">
+                        
+                        <!-- ... other menu items ... -->
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 01</a></li>
+                        <li><a href="#" class="block px-4 py-2   font-medium">HOME 02</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 03</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 04</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 05</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 06</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 07</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 08</a></li>
+                        <li><a href="#" class="block px-4 py-2 font-medium">HOME 09</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 10</a></li>                      
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 11</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 12</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 13</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 14</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 15</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 16</a></li>
+                        <li><a href="#" class="block px-4 py-2 font-medium">HOME 17</a></li>
+                        <li><a href="#" class="block px-4 py-2  font-medium">HOME 18</a></li>
+                    
+                    </ul>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+                <li class="about">
+                    <a href="#about" class="nav-link block px-4 py-2">ABOUT US</a>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+                <li class="services">
+                    <a href="#services" class="nav-link block px-4 py-2">SERVICES</a>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+                <li class="portfolio">
+                    <a href="#portfolio" class="nav-link block px-4 py-2">PORTFOLIO</a>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+                <li class="price">
+                    <a href="#price" class="nav-link block px-4 py-2">PRICING</a>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+                <li class="blog">
+                    <a href="#blog" class="nav-link block px-4 py-2">BLOG</a>
+                </li>
+                <img src="assets/images/Servicess/Line 1.png" class="w- block lg:hidden" alt="Divider line">
+            </ul>
+            <img src="assets/images/Servicess/Line 1.png" class="w-  lg:block hidden" alt="Divider line">
+            <div class="mt-4 pl-7 pb-4">
+                <button class="rounded-md py-2 px-4 text-gradient-to-b from-custom-red to-custom-orange text-red-500 font-semibold login btn-custom text-">Login</button>
+                <button class="rounded-md py-2 px-4  ml-2 text-white text-base font-semibold custom-gradient btn-custom">Get Started</button>
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <section class="md:h-screen pt-16 md:pt-52 lg:py-20 lg:flex justify-center items-center relative slider-section" id="home">
+        <div class="slider-container">
+            <img class="slider-image active" src="assets\images\slider2 1.png" alt="">
+            <img class="slider-image" src="assets\images\slider2 1 (2).png" alt="">
+            <img class="slider-image" src="assets\images\slider2 1 (1).png" alt="">
+        </div>
+        <div class="md:ml-20 container relative">
+            <div class="align-middle grid grid-cols-1 justify-center items-center">
+                <div class="md:w-[50%] lg:w-full">
+                    <p class="lg:mt-4 py-6 "><img src="assets\images\Rectangle 2.png" class="inline-block" alt=""><span
+                            class="text-sm md:text-base border-white/20 px-6 mt-6   text-white  bg-white bg-opacity-10 online">Online
+                            Presence Via Interactive Websites</span></p>
+                    <h1 id="animated-heading"
+                        class=" text-base md:text-3xl lg:text-4xl xl:text-6xl  text-white mx-4 md:mx-0 mt-6 font-semibold  ">
+                        Advance Your <br class="hidden lg:block"> Business Growth</h1>
+                    <p class="text-base max-w- md:max-w-none mx-4 md:mx-0 md:mt-4 text-white font-medium lineheight">
+                        Enable startups and organizations in approaching larger audiences <br>by delivering engaging
+                        mobile apps</p>
+                    <div class="mt-14 flex float-left md:flex-row items-center mx-4 md:mx-0">
+                        <a href="#"
+                            class="custom-gradient text-base rounded-lg text-white py-3 px-11 md:mr-4 mb-4 md:mb-0 btn-custom font-semibold ">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+              
+    <div id="about">
+    <section class="my-20 relative     mx-6 md:mx-40">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle  ">Attributes</h3>
+
+            </div>
+            <h2 class=" font-semibold  features">Best<span class=" features gradient-text"> Features</span></h2>
+
+        </div>
+
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 compat -mx-5">
+            <!-- Feature 1 -->
+            <div class="text-center p-4 md:p-6 gap-8">
+                <div class="flex items-center  border border-[#FFE5DB] border-opacity-100  h-20 built fullbox">
+                    <img src="assets\images\Attributes\Group 31.png" alt="" class="with">
+                    <p class=" ml-2 text-sm sm:text-xl font-medium lg:times">Fully Responsive</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="text-center p-4 md:p-6 gap-2">
+                <div class="flex items-center border border-[#FFE5DB] border-opacity-100 h-20 built fullbox">
+                    <img src="assets\images\Attributes\Group 313.png" alt="" class="with">
+                    <p class="ml-2 text-sm sm:text-xl font-medium times">Browser Compatibility</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="text-center p-4 md:p-6">
+                <div class="flex items-center  border border-[#FFE5DB] border-opacity-100 h-20 built fullbox">
+                    <img src="assets\images\Attributes\Group 313 (1).png" alt="" class="with">
+                    <p class="ml-2 text-sm sm:text-xl font-medium times">Retina Ready</p>
+                </div>
+            </div>
+
+            <div class="text-center p-4 md:p-6">
+                <div class="flex items-center  border border-[#FFE5DB] border-opacity-100 h-20 built  fullbox">
+                    <img src="assets\images\Attributes\Group 313 (2).png" alt="" class="with">
+                    <p class="ml-2 text-sm sm:text-xl font-medium times">Built with WordPress</p>
+                </div>
+            </div>
+
+            <div class="text-center p-4 md:p-6">
+                <div class="flex items-center  border border-[#FFE5DB] border-opacity-100 h-20 built fullbox">
+                    <img src="assets\images\Attributes\Group 3m.png" alt="" class="with">
+                    <p class="ml-2 text-sm sm:text-xl font-medium times">Fast Loading Times</p>
+                </div>
+            </div>
+
+            <div class="text-center p-4 md:p-6">
+                <div class="flex items-center  border border-[#FFE5DB] border-opacity-100 h-20 built fullbox">
+                    <img src="assets\images\Attributes\Group 314 (2).png" alt="" class="with">
+                    <p class="ml-2 text-sm sm:text-xl font-medium times">Clean/Lovely Design</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="spacing  relative">
+        <div class="  item mx-4  md:mx-40">
+            <div class="flex justify-center items-center h-full 2xl:gap-48">
+                <div class="md:w-[50%] px-4 md:px-0 md:order-2  mx-6 2xl:mx-0 first  ">
+                    <button
+                        class="md:mt-0 md:mb-0 py-2 px-3 w-full md:w-auto lg:w-32 h-10 text-base md:h-auto rounded-full font-medium login "><span
+                            class="gradient-text">Our History</span></button>
+                    <div class="mt-5">
+                        <h3 class="text-base md:text-sm lg:text-4xl font-semibold text-white mb-4">Let Us <span
+                                class="tell">Tell You</span> a Short About <br> Our Journey</h3>
+                        <p class="text-sm  md:text-base text-white mb-6 font-extralight Lorem">Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry. <br> Loreaim Ipsum has been the
+                            industry's standard dummy.</p>
+                        <div class="flex  flex-col gap-4">
+                            <div class="lg:flex  flex items-center">
+                                <span class="text-green-500 mr-2"><img src="assets\images\Attributes\tick.png"
+                                        alt=""></span>
+                                <p class="  text-white   font-semibold md:text-base text-sm">Love what we do</p>
+                            </div>
+                            <div class="lg:flex  flex items-center">
+                                <span class="text-green-500 mr-2 "><img src="assets\images\Attributes\tick.png"
+                                        alt=""></span>
+                                <p class="2xl:text-base  text-white       font-semibold md:text-base text-sm">Motivation</p>
+                            </div>
+                            <div class="lg:flex  flex items-center">
+                                <span class="text-green-500 mr-2"><img src="assets\images\Attributes\tick.png"
+                                        alt=""></span>
+                                <p class="2xl:text-base  text-white          font-semibold md:text-base text-sm">Simplicity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 md:mt-12">
+                        <button
+                            class="w-full md:w-auto h-12 md:h-auto rounded-md bg-gradient-to-r lg:w-48 lg:h-12  md:px-10 md:py-3 from-red-500 to-red-600 text-white text-base font-semibold custom-gradient btn-custom">Read
+                            More <span class=" float-right "><img src="assets\images\Attributes\Arrow.png" alt=""
+                                    class="md:block hidden"></span></button>
+                    </div>
+                </div>
+                <div class="md:w-[50%] md:flex lg:flex hidden order-1 md:order-2  justify-center items-center">
+                    <img src="assets\images\Attributes\vrmee.png" alt="" class="md:max-w-[300px]">
+                </div>
+                <div class="absolute bottom-0 right-40 md:block hidden">
+                    <img src="assets\images\Attributes\Group (1).png" alt="Decorative line" class="w-full h-auto">
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>  
+
+    <section class="container mx-6 md:mx-40  md:px-0 lg:px-0 spacing" id="services">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle"> Exclusive Service</h3>
+
+            </div>
+            <h2 class="text-3xl md:text- font-semibold features"> Explore Our Creative<span class="gradient-text">
+                    Service</span></h2>
+
+        </div>
+
+        <!-- View All Service Link -->
+        <a href="#" class="text-black  underline hover:no-underline block mt-2 md:float-right md:mt-0 md:mr-0  font-semibold md:text-xl text-base">View
+            all Service</a>
+
+        <!-- Description -->
+        <p class="text-sm mt-4 md:mt-2 leading-normal md:leading-relaxed text-gray-600 md:text-base font-normal paragraph">Design
+            Season is a collaboration between Leicester’s creative hub  LCB<br> based in the city’s cultural quarter and
+            designers and design <br> businesses all over the city & county.</p>
+        </div>
+        <div class="flex flex-col mt-10 md:mt-0 lg:mt-0 md:ml-0 ml-4 w-full">
+            <!-- Content -->
+            <div class="flex flex-col w-full">
+                <!-- Heading -->
+                <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-black compat">Marketing Strategy</h3>
+
+                <!-- Paragraph -->
+                <p class="text-sm md:text-base lg:text-base font-normal  mt-4 paragraph">
+                    We help our clients make significant and lasting improvements to their performance and realize <br
+                        class=" md:inline">their most important goals
+                </p>
+
+                <!-- Border and Arrow Container -->
+                <div class="relative w-full mt-4">
+                    <!-- Line -->
+                    <img src="assets/images/Servicess/Line 1.png" class="w-" alt="Divider line">
+
+                    <!-- Arrow -->
+                     <div class=""><a href="">
+                    <img src="assets/images/Servicess/Group 5m.png" alt="Group 5 Image"
+                        class="absolute right-0 top-1/2 transform -translate-y-24 hidden md:block servicearrow-hover"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-20 md:mt-0 lg:mt-0">
+            <!-- Image -->
+
+
+            <!-- Content -->
+            <div class="flex flex-col md:mt-8 md:ml-0 ml-4">
+                <!-- Heading -->
+                <h3 class="text-lg md:text-xl  text-black mt-50 md:mt-0 lg:mt-0 lg:text-2xl font-semibold">Mobile & App
+                    Design</h3>
+                <!-- Paragraph -->
+                <p class="text-sm md:text-base  text-gray-600 mt-4 lg:text-base font-normal paragraph">We help our clients make
+                    significant and lasting improvements to their performance and realize <br>their most important goals
+                </p>
+
+                <!-- Border -->
+                <div class="relative w-full mt-4">
+                    <!-- Line -->
+                    <img src="assets/images/Servicess/Line 1.png" class="w-full" alt="Divider line">
+
+                    <!-- Arrow -->
+                    <div class=""><a href="">
+                        <img src="assets/images/Servicess/Group 5m.png" alt="Group 5 Image"
+                            class="absolute right-0 top-1/2 transform -translate-y-24 hidden md:block servicearrow-hover"></a>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center mt-20 md:mt-0 lg:mt-0">
+            <!-- Image -->
+
+
+            <!-- Content -->
+            <div class="flex flex-col md:mt-8 md:ml-0 ml-4">
+                <!-- Heading -->
+                <h3 class="text-lg md:text-xl  text-black mt-50 md:mt-0 lg:mt-0  lg:text-2xl font-semibold">3D Modeling
+                    & Motion</h3>
+                <!-- Paragraph -->
+                <p class="text-sm md:text-base  text-gray-600 mt-4 lg:text-base font-normal paragraph">We help our clients make
+                    significant and lasting improvements to their performance and realize <br> their most important
+                    goals</p>
+
+                <!-- Border -->
+                
+                    <!-- Line -->
+                     
+                    
+
+                    
+                    <a href="" class="relative w-full mt-4">
+                        <img src="assets/images/Servicess/Group 5m.png" alt="Group 5 Image"
+                            class="absolute right-0 top-1/2 transform -translate-y-24 hidden md:block servicearrow-hover"></a>
+                            <img src="assets/images/Servicess/Line 1.png">
+                
+
+            
+
+        </div>
+    </section>
+
+
+
+    <section class="container mx-6 md:mx-40  py-16 second" id="services">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-blue-600 text-base font-semibold circle">Work Process</h3>
+
+            </div>
+            <h2 class=" md:text- font-semibold  features ">Our Working<span class="gradient-text"> Process</span>
+            </h2>
+
+
+            <div class="relative mt-12">
+                <img src="assets\images\Workprocess\Group 7.png" alt="" class="absolute hidden lg:block spacing">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="relative inline-block mb-4">
+                            <img src="assets\images\Workprocess\Group 16.png" alt="" class="mx-0">
+
+                        </div>
+                        <h3 class="md:text-2xl font-semibold mb-2 text-lg">Design</h3>
+                        <p class="md:text-base font-normal sit text-sm">Lorem ipsum dolor sit amet, consectetur <br> notted
+                            adipisicing.</p>
+                    </div>
+
+                    <div class="text-center mt-11">
+                        <div class="relative inline-block mb-4">
+                            <img src="assets\images\Workprocess\Group 17.png" alt="" class="mx-0">
+
+                        </div>
+                        <h3 class="md:text-2xl font-semibold mb-2 text-lg">Strategy</h3>
+                        <p class="md:text-base font-normal sit text-sm">Lorem ipsum dolor sit amet, consectetur <br> notted
+                            adipisicing.</p>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <div class="relative inline-block  mb-4">
+                            <img src="assets\images\Workprocess\Group 18 (1).png" alt="" class="mx-0">
+
+                        </div>
+                        <h3 class="md:text-2xl font-semibold mb-2 text-lg">Development</h3>
+                        <p class="md:text-base font-normal sit text-sm">Lorem ipsum dolor sit amet, consectetur <br> notted
+                            adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="mx-6 md:mx-40 max-w-full flex flex-col font-semibold wedo" id="portfolio">
+        <div class="flex gap-4">
+            <img src="assets/images/Ellipse round.png" alt="Round Image">
+            <p class="absolute text-[16px] w-full h-4 ml-2 text-blue-600 text-base circle">We are best work</p>
+        </div>
+        <div>
+            <h3 class="text-[40px] mt-4 features">We Do Awesome <span class="gradient-text">Work</span></h3>
+        </div>
+        <div class="container mt-11 font-semibold max-w-full">
+            <div class="grid grid-cols-1 gap-8"> 
+                <ul class="filters flex whitespace-nowrap overflow-x-auto gap-8">
+                    <li class="active filter seo px-10 py-3 rounded btn-custom hover:text-white hoverbg cursor-pointer all" data-filter="All">
+                        <span class=" rounded font-semibold  text-base">All</span>
+                    </li>
+                    <li class=" filter  hover:bg-black px-10 py-3 all btn-custom hover:text-white hoverbg  cursor-pointer" data-filter="SEO">
+                        <span class=" rounded text-base text-[#9a9a9a] font-semibold">SEO</span>
+                    </li>
+                    <li class="filter px-10 py-3 all btn-custom hover:text-white hoverbg cursor-pointer" data-filter="Webdesign">
+                        <span class="  rounded text-base text-[#9a9a9a] font-semibold">Webdesign</span>
+                    </li>
+                    <li class="filter px-10 py-3 all btn-custom hover:text-white hoverbg cursor-pointer" data-filter="Work">
+                        <span class="  rounded text-base text-[#9a9a9a] font-semibold">Work</span>
+                    </li>
+                    <li class="filter px-10 py-3 all btn-custom hover:text-white hoverbg cursor-pointer" data-filter="Wordpress">
+                        <span class="  rounded text-base text-[#9a9a9a] font-semibold">Wordpress</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-6 mt-8 md:mx-0 mx-10">
+                <div class="w-full card" data-category="All SEO Wordpress">
+                    <div class="img-hover-zoom">
+                        <img src="assets/images/Work/Rectangle 8.png" alt="Image 1" class="w-full seowebsite">
+                    </div>
+                    <div class="mt-4">
+                        <p class=" font-semibold affliate  text-sm md:text-base">Affiliate</p>
+                        <h3 class=" font-semibold affliates md:text-2xl text-lg">SEO Website</h3>
+                        <div class="servicearrow-hover"><a href="">
+                        <img src="assets/images/Work/Group 50.png" alt="Icon" class="float-right group1 "></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-full card" data-category="All Webdesign">
+                    <div class="img-hover-zoom">
+                        <img src="assets/images/Work/Rectangle 9 (1).png" alt="Image 1" class="w-full seowebsite">
+                    </div>
+                    <div style="margin-top: 16px;">
+                        <p class=" font-semibold affliate text-sm md:text-base">Branding</p>
+                        <h3 class=" font-semibold affliates md:text-2xl text-lg">Webdesign</h3>
+                        <div class="servicearrow-hover"><a href="">
+                            <img src="assets/images/Work/Group 50.png" alt="Icon" class="float-right group1 "></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full card" data-category="All Work Wordpress">
+                    <div class="img-hover-zoom">
+                        <img src="assets/images/Work/Rectangle 10 (1).png" alt="Image 1" class="w-full seowebsite">
+                    </div>
+                    <div style="margin-top: 16px;"> 
+                        <p class=" font-semibold affliate text-sm md:text-base">Branding</p>
+                        <h3 class=" font-semibold affliates md:text-2xl text-lg">All Work</h3>
+                        <div class="servicearrow-hover"><a href="">
+                            <img src="assets/images/Work/Group 50.png" alt="Icon" class="float-right group1 "></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full card" data-category="All Wordpress">
+                    <div class="img-hover-zoom">
+                        <img src="assets/images/Work/Rectangle 11 (1).png" alt="Image 1" class="w-full seowebsite">
+                    </div>
+                    <div style="margin-top: 16px;">
+                        <p class=" font-semibold affliate text-sm md:text-base">Branding</p>
+                        <h3 class=" font-semibold affliates md:text-2xl text-lg">SEO Website</h3>
+                        <div class="servicearrow-hover"><a href="">
+                            <img src="assets/images/Work/Group 50.png" alt="Icon" class="float-right group1 "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container mx-6 md:mx-40  spacing" id="price">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle">Pricing</h3>
+
+            </div>
+            <h2 class="text-3xl md:text- font-semibold features"> Choose your <span class="gradient-text"> Plan</span>
+            </h2>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mx-0 mx-10 compat">
+            <!-- Plan 1 -->
+            <div class="overflow-hidden shadows bg-white individual">
+                <div class="p-6 text-black text-center">
+                    <h4 class="text-base mt- font-semibold    individuals">Individual</h4>
+                    <h4 class="text-3xl font-medium mt-2 prise">Start-up</h4>
+                    <div class="mt-6">
+                        <img src="assets\images\Plan\Line 4.png" alt="">
+                    </div>
+                    <p class=" font-semibold  text-red-500 mt-10 md:text-6xl text-5xl">$19<span class=" text-black text-lg md:text-xl">/Weekly</span>
+                    </p>
+
+                    <ul class="mt-10 gap-4 md:text-xl text-sm">
+                        <ul class="mt-4">
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">Business & Finance Analysis</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">SEO Optimization</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">Management & Marketing</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">24/7 Customer Support</p>
+                            </li>
+                            <div class="mt-6">
+                                <img src="assets\images\Plan\Line 4.png" alt="">
+                            </div>
+                        </ul>
+                    </ul>
+                    <a href=""
+                    class="text-center mt-6 flex items-center justify-center bg-opacity-100 rounded-md md:px-11 md:py-3  read btn-custom">
+                        <div href="#" class="font-semibold       gradient-text">Read More
+                            <img src="assets\images\Plan\Arrow - Right.png"
+                                class="ml-3 mt-1 hidden md:block float-right arrow" alt="arrow"></div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Plan 2 -->
+            <div class="overflow-hidden shadows bg-white individual">
+                <div class="p-6 text-black text-center">
+                    <h4 class="text-base mt- font-semibold    individuals">Individual</h4>
+                    <h4 class="text-3xl font-medium mt-2 prise">Professional</h4>
+                    <div class="mt-6">
+                        <img src="assets\images\Plan\Line 4.png" alt="">
+                    </div>
+                    <p class=" font-semibold  text-red-500 mt-10 md:text-6xl text-5xl">$49<span class=" text-black text-lg md:text-xl">/Weekly</span>
+                    </p>
+
+                    <ul class="mt-10 gap-4 md:text-xl  text-sm">
+                        <ul class="mt-4">
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">Business & Finance Analysis</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">SEO Optimization</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">Management & Marketing</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">24/7 Customer Support</p>
+                            </li>
+                            <div class="mt-6">
+                                <img src="assets\images\Plan\Line 4.png" alt="">
+                            </div>
+                        </ul>
+                    </ul>
+                    <a href=""
+                        class="text-center mt-6 flex items-center justify-center bg-opacity-100 rounded-md md:px-11 md:py-3  read btn-custom">
+                        <div href="#" class="font-semibold gradient-text">Read More
+                            <img src="assets\images\Plan\Arrow - Right.png"
+                                class="ml-3 mt-1 hidden md:block float-right arrow" alt="arrow"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Plan 3 -->
+            <div class="overflow-hidden shadows bg-white individual">
+                <div class="p-6 text-black text-center">
+                    <h4 class="text-base font-semibold individuals">Individual</h4>
+                    <h4 class="text- font-medium mt-2 prise">Enterprise</h4>
+                    <div class="mt-6">
+                        <img src="assets\images\Plan\Line 4.png" alt="">
+                    </div>
+                    <p class=" font-semibold     mt-10 text-red-500 md:text-6xl text-5xl">$99<span class=" text-black text-lg md:text-xl">/Weekly</span>
+                    </p> 
+
+                    <ul class="mt-10 gap-4 md:text-xl text-sm">
+                        <ul class="mt-4">
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">Business & Finance Analysis</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">SEO Optimization</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">  Management & Marketing</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <img src="assets\images\Plan\tick.png" class="mr-2" alt="tick">
+                                <p class="font-medium paragraph">24/7 Customer Support</p>
+                            </li>
+                            <div class="mt-6">
+                                <img src="assets\images\Plan\Line 4.png" alt="">
+                            </div>
+                        </ul>
+                    </ul>
+                    <a href=""
+                    class="text-center mt-6 flex items-center justify-center bg-opacity-100 rounded-md md:px-11 md:py-3  read btn-custom">
+                        <div href="#" class="font-semibold gradient-text  ">Read More
+                            <img src="assets\images\Plan\Arrow - Right.png"
+                                class="ml-3 mt-1 hidden md:block float-right arrow" alt="arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="gap- mx-6 md:mx-40 spacing">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets/images/Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle ">Team</h3>
+            </div>
+            <h2 class="text-3xl md:text- font-semibold features">Meet Our Expert<span class="gradient-text"> Team</span></h2>
+            <div class="flex justify-end mb-">
+                <button class=" rotate-left servicearrow-hover-buttton servicearrow-hover-buttton mt-4"> 
+                    <img src="assets/images/Team/Group 52.png" alt="" class="mr-4 w-8  h-8">
+                </button>
+                <button class="servicearrow-hover rotate-right mt-4">
+                    <img src="assets/images/Team/Group 50.png" alt="" class="w-8  h-8">
+                </button>
+            </div>
+            <div id="teamContainer" class="grid sm:grid-cols-2 md:grid-cols-2 2xl:grid-cols-4 gap-8 hero team-container">
+            <div class="gap-3 team-member">
+                <div class="img-hover-zoom w-full imgoverlayout">
+
+
+                    <img src="assets\images\Team\Ellipse 13.png" alt="">
+                </div>
+                <div class=" w-auto h-auto gap-6 ">
+                    <h3 class="w-full h-full md:text-2xl font-semibold mt-3 guy affliates text-xl">Guy Hawkins <p
+                            class="w-auto h-full  text-base  md:ml-9 mt-2 ml-7 font-normal individuals">Developer</p>
+                    </h3>
+                    <div class="flex mt-6 gap-4 team2">
+                        <div class=""><a href="#">
+                        <img src="assets\images\Team\VRmeei.png" alt=""></a>
+                    </div>
+                    <div class=""><a href="#">
+                        <img src="assets\images\Team\Group.png" alt=""></a>
+                    </div>
+                    <div class=""><a href="#">
+                        <img src="assets\images\Team\vrmeeio.png" alt=""></a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gap-3  justify-center items-center team-member">
+                <div class="img-hover-zoom w-full imgoverlayout">
+                <img src="assets\images\Team\Ellipse 15.png" alt="">
+                </div>
+                <div class="gap-6 justify-center">
+                    <h3 class="md:text-2xl font-semibold mt-3 text-left guy1    affliates  text-xl">Leslie Alexander <p
+                            class="font-normal text-base text-center mt-2  manager">Project Manager</p>
+                    </h3>
+                    <div class="flex mt-6 gap-4 team3">
+                        <div class=""><a href="#">
+                        <img src="assets\images\Team\VRmeei.png" alt=""></a>
+                        </div>
+                        <div class=""><a href="#">
+                        <img src="assets\images\Team\Group.png" alt=""></a>
+                        </div>
+                        <div class=""><a href="#">
+                        <img src="assets\images\Team\vrmeeio.png" alt=""></a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="gap-3  justify-center items-center team-member">
+                <div class="img-hover-zoom w-full imgoverlayout">
+                <img src="assets\images\Team\Ellipse 14.png" alt="">
+                </div>
+                <div class="gap-6 justify-center">
+                    <h3 class="md:text-2xl font-semibold mt-3 text-left coy   affliates text-xl">Arlene McCoy<p
+                            class="font-normal text-base text-center mt-2  designer">UI/UX Designer</p>
+                    </h3>
+                    <div class="flex mt-6 gap-4 social">
+                        <div class=""><a href="#">
+                        <img src="assets\images\Team\VRmeei.png" alt=""></a>
+                    </div>
+                    <div class=""><a href="#">
+                        <img src="assets\images\Team\Group.png" alt=""></a>
+                    </div>
+                    <div class=""><a href="#">
+                        <img src="assets\images\Team\vrmeeio.png" alt=""></a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gap-3  justify-center items-center team-member">
+                <div class="img-hover-zoom w-full imgoverlayout">
+                <img src="assets\images\Team\Ellipse 16.png" alt="">
+                </div>
+                <div class="gap-6 justify-center">
+                    <h3 class="md:text-2xl font-semibold mt-3 text-left guy1    affliates  text-xl">Leslie Alexander <p
+                        class="font-normal text-base text-center mt-2  manager">Project Manager</p>
+                </h3>
+                    <div class="flex mt-6 gap-4 team3">
+                        <div class=""><a href="">
+                        <img src="assets\images\Team\VRmeei.png" alt=""></a>
+                        </div>
+                        <div class=""><a href="">
+                        <img src="assets\images\Team\Group.png" alt=""></a>
+                        </div>
+                        <div class=""><a href="">
+                        <img src="assets\images\Team\vrmeeio.png" alt=""></a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mx-6 md:mx-40 spacing">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle">Testimonial</h3>
+
+            </div>
+            <h2 class="text-3xl md:text- font-semibold features">What They’re<span class="gradient-text"> Saying?</span>
+            </h2>
+            <div class="flex  justify-end">
+                <button id="prevButton1" class="arrow-button mr-4 servicearrow-hover-buttton mt-4">
+                    <img src="assets/images/Team/Group 52.png" alt="" class="arrow-icon w-8 h-8">
+                </button>
+                <button id="nextButton1" class="arrow-button servicearrow-hover mt-4">
+                    <img src="assets/images/Team/Group 50.png" alt="" class="arrow-icon w-8 h-8">
+                </button>
+            </div>
+        </div>
+
+        <div class="2xl:flex flex-col-reverse md:flex-row mt- md:gap-8" style="margin-top: px;">
+            <div class="2xl:w-1/2 md:w-1/2 gap-8 card-container1">
+                <div class="flex flex-col gap-">
+                    <div class="flex gap-6 mx-6 hover:border rounded-lg hover:shadow-md hover:bg-white p-5 box">
+                        <img src="assets\images\Testimonial\Ellipse 10.png" alt="Avatar" class="w-24 h-24">
+                        <div class="flex flex-col mt-5 gap-2">
+                            <h3 class="md:text-2xl font-semibold affliates text-lg">Guy Hawkins</h3>
+                            <p class="md:text-base font-normal individuals text-sm">Developer</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mx-6 hover:border rounded-lg hover:shadow-md hover:bg-white p-5 box ">
+                        <img src="assets\images\Testimonial\Ellipse 11.png" alt="Avatar" class="w-24 h-24">
+                        <div class="flex flex-col mt-5 gap-2 ">
+                            <h3 class="md:text-2xl font-semibold affliates text-lg">Leslie Alexander</h3>
+                            <p class="md:text-base font-normal individuals text-sm">Project Manager</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mx-6 hover:border rounded-lg hover:shadow-md hover:bg-white p-5 box ">
+                        <img src="assets\images\Testimonial\Ellipse 12.png" alt="Avatar" class="w-24 h-24">
+                        <div class="flex flex-col mt-5 gap-2 ">
+                            <h3 class="md:text-2xl font-semibold affliates taext-lg">Arlene McCoy</h3>
+                            <p class="md:text-base font-normal individuals text-sm">UI/UX Designer</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="2xl:w-ful md:w-1/2 gap-8 mt-16 card-container1">
+                <div class="flex flex-col star gap-8">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="md:text-2xl font-semibold affliates text-xl">The Experience Was Amazing!</h3>
+                        <div class="flex gap-2">
+                            <img src="assets\images\Testimonial\Star 1.png" alt="Star" class="w-6 h-6">
+                            <img src="assets\images\Testimonial\Star 1.png" alt="Star" class="w-6 h-6">
+                            <img src="assets\images\Testimonial\Star 1.png" alt="Star" class="w-6 h-6">
+                            <img src="assets\images\Testimonial\Star 1.png" alt="Star" class="w-6 h-6">
+                            <img src="assets\images\Testimonial\Star 1.png" alt="Star" class="w-6 h-6">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets\images\Testimonial\Line 2.png" alt="Divider" class="w-full">
+                    </div>
+                    <div class="flex flex-col gap-8 para">
+                        <p class=" font-normal survive">It has survived not only five centuries , but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing software.</p>
+                        <p class=" font-normal survive">Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                            years old. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mx-6 md:mx-40 px- spacing     " id="blog">
+        <div class="mb-">
+            <div class="flex items-center mb-4">
+                <img src="assets\images\Ellipse round.png" alt="" class="mr-4">
+                <h3 class="absolute text-base font-semibold circle">Blog</h3>
+
+            </div>
+            <h2 class="text-3xl md:text- font-semibold features">Read Our Latest <span class="gradient-text">News</span>
+            </h2>
+            <div class="flex justify-end mb-4 ">
+                <button id="prevButton" class=" arrow-button mr-4 mt-4 servicearrow-hover-buttton">
+                    <img src="assets/images/Team/Group 52.png" alt="" class="w-8 h-8 mb-">
+                </button>
+                <button id="nextButton" class="servicearrow-hover  mt-4 arrow-button">
+                    <img src="assets/images/Team/Group 50.png" alt="" class="w-8 h-8 mb-">
+                </button>
+            </div>
+        </div>
+
+        <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+            <!-- Card 1 -->
+            <div class="relative pb-64 mb-16 md:mb-0 card-container">
+                <img src="assets\images\Blog\Rectangle 4.png" alt="" class="rounded-lg w-full h-64 object-cover">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[90%] bg-white rounded-lg shadow-lg p-6 mb-10 agency">
+                    <p class=" text-sm md:text-base font-medium mb-2    nov">11 November 2023</p>
+                    <h3 class="text-lg md:text-xl font-medium mb-2 affliates">The Powerful Look For Best In 2023</h3>
+                    <p class="text-gray-600 text-sm md:text-base font-normal mb-4 para">Our team of digital marketing experts who are passionate about helping businesses succeed online...</p>
+                    <a href="#" class="inline-block px-4 py-2 md:px-6 md:py-3 text-white text-sm md:text-base font-semibold rounded-lg more btn-custom" id="button1">Learn More</a>
+                </div>
+            </div>
+            <div class="relative pb-64 mb-16 md:mb-0 card-container">
+                <img src="assets\images\Blog\Rectangle 5.png" alt="" class="rounded-lg w-full h-64 object-cover">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[90%] bg-white rounded-lg shadow-lg p-6 mb-10 agency">
+                    <p class=" text-sm md:text-base font-medium mb-2 nov">11 November 2023</p>
+                    <h3 class="text-lg md:text-xl font-medium mb-2 affliates">The Powerful Look For Best In 2023</h3>
+                    <p class="text-gray-600 text-sm md:text-base font-normal mb-4 para">Our team of digital marketing experts who are passionate about helping businesses succeed online...</p>
+                    <a href="#" class="inline-block px-4 py-2 md:px-6 md:py-3 text-white text-sm md:text-base font-semibold rounded-lg more btn-custom" id="button1">Learn More</a>
+                </div>
+            </div>
+            <div class="relative pb-64 mb-16 md:mb-0 card-container">
+                <img src="assets\images\Blog\Rectangle 6.png" alt="" class="rounded-lg w-full h-64 object-cover">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[90%] bg-white rounded-lg shadow-lg p-6 mb-10 agency">
+                    <p class=" text-sm md:text-base font-medium mb-2 nov">11 November 2023</p>
+                    <h3 class="text-lg md:text-xl font-medium mb-2 affliates">The Powerful Look For Best In 2023</h3>
+                    <p class="text-gray-600 text-sm md:text-base font-normal mb-4 para">Our team of digital marketing experts who are passionate about helping businesses succeed online...</p>
+                    <a href="#" class="inline-block px-4 py-2 md:px-6 md:py-3 text-white text-sm md:text-base font-semibold rounded-lg more btn-custom" id="button1">Learn More</a>
+                </div>
+            </div>
+
+            
+            <!-- <div class="relative pb-64 mb-16 md:mb-0 card-container">
+                <img src="assets\images\Blog\Rectangle 6.png" alt="" class="rounded-lg w-full h-64 object-cover">
+                <div
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[90%] bg-white rounded-lg shadow-lg p-6 mb-10 agency">
+                    <p class="text-blue-600 text-sm md:text-base font-medium mb-2">11 November 2023</p>
+                    <h3 class="text-lg md:text-xl font-medium mb-2">The Powerful Look For Best In 2023</h3>
+                    <p class="text-gray-600 text-sm md:text-base font-normal mb-4">Our team of digital marketing experts
+                        who are passionate about helping businesses succeed online...</p>
+                    <a href="#"
+                        class="inline-block px-4 py-2 md:px-6 md:py-3 text-white text-sm md:text-base font-semibold rounded-lg more btn-custom">Learn
+                        More</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+
+    <footer class="text-white pt-40 pb-16 lg:px-40 px-10 footer">
+        <!-- Try techtide today section -->
+        <div class="md:mx-32 rounded-md sm:rounded-3xl shadow-lg -mt-60 mb-16 px-10 py-6  custom-gradient">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h3 class="md:text-2xl font-semibold mb-2 text-lg">Try TechTide Today</h3>
+                    <div class="flex flex-wrap gap-4 font-medium">
+                        <div class="flex items-center gap-1">
+                            <img src="assets\images\iam.png" alt="" class="w-6 h-6">
+                            <span class="md:text-base font-medium text-sm">Love what we do</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <img src="assets\images\iam.png" alt="" class="w-6 h-6">
+                            <span class="md:text-base font-medium text-sm">Motivation</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <img src="assets\images\iam.png" alt="" class="w-6 h-6">
+                            <span class="md:text-base font-medium text-sm">Simplicity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0 flex gap-4 text-red-400 2xl:text-base text-sm">
+                    <button class="bg-white 2xl:px-11 py-3 px-4 rounded-lg font-semibold btn-custom">Login</button>
+                    <button class="bg-white text-red-400 px-6 py-3 rounded-lg font-semibold btn-custom">Get started</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main footer content -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-16 justify-between 2xl:flex md:-mt-4 ">
+            <!-- Company info -->
+            <div class=" gap-7 md:mb-36 lg:mb-0 sm:mb-0 mb-14">
+                <div class="flex items-center gap-2 mb-6">
+                    <img src="assets\images\Frame (1).png" alt="" class="w-10 h-10">
+                    <h2 class="text-4xl font-medium">TechTide</h2>
+                </div>
+                <p class="font-medium md:text-xl mb-6 trusted text-sm">We have been most trusted web design <br class="md:block hidden"> agency since 25+
+                    years.</p>
+                <div class="flex" style="gap: 10px;">
+                    <div class="facebooks-hover"><a href="">
+                    <img src="assets\images\F.png" alt="" class="w-8 h-8    "></a>
+                </div>
+                <div class="instagrams-hover"> <a href="">
+                    <img src="assets\images\iam2.png" alt="" class="w-8 h-8"></a>
+                </div>
+                <div class="twitters-hover"><a href="">
+                    <img src="assets\images\iam3.png" alt="" class="w-8 h-8"></a>
+                </div>
+                <div class="linkdns-hover"><a href="">
+                    <img src="assets\images\Group 45.png" alt="" class="w-8 h-8"></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Our pages -->
+
+            <div class="sm:mb-0 mb-14">
+                <h3 class="md:text-2xl font-semibold mb-4 text-lg">Our Pages</h3>
+                <ul class="grid space-y-2 font-medium md:text-base trusted text-sm">
+                    <a href="#" class="pages">Home</a>
+                    <a href="#about" class="pages">About</a>
+                    <a href="#services" class="pages">Service</a>
+                    <a href="#price" class="pages">Pricing</a>
+                    <a href="#portfolio" class="pages">Portfolio</a>
+                    <a href=" #blog" class="pages">Blog</a>
+                    
+                </ul>
+            </div>
+
+            <!-- Help center -->
+            <div class="md:mb-36 lg:mb-0 mb-14">
+                <h3 class="md:text-2xl font-semibold mb-4 text-lg">Help Center</h3>
+                <ul class="grid space-y-2 text-[#BDBDBD] font-medium md:text-base trusted text-sm">
+                    <a href="#" class="pages">Accounting</a>
+                    <a href="#" class="pages">Billing</a>
+                    <a href="#" class="pages"> General question</a>
+                    
+                </ul>
+            </div>
+
+            <!-- Follow us -->
+            <div class="sm:mb-0 mb-14">
+                <h3 class="md:text-2xl font-semibold mb-4 text-lg">Follow us</h3>
+                <div class="space-y-4 font-medium md:text-base trusted text-sm">
+                    <div class="flex items-center gap-4 phone-number" onclick="revealNumber()">
+                        <img src="assets/images/Call.png" alt="Call Icon" class="w-12 h-12">
+                        <span id="phone-number"> (603) 555-0123</span>
+                    </div>
+                    <div class="flex items-center gap-4 email-link cursor-pointer" onclick="sendEmail()">
+                        <img src="assets/images/Email.png" alt="Email Icon" class="w-12 h-12">
+                        <span id="email-address">Sales: @example.com</span>
+                    </div>
+                <a href="" class="flex items-center gap-4">
+                    <div class="flex items-center gap-4">
+                        <img src="assets\images\Gps.png" alt="" class="w-12 h-12">
+                        <span class="text-[#BDBDBD]">4140 Parker Rd. Allentown, New Mexico 31136</span>
+                    </div></a>
+                    
+                </div>
+            </div>
+            <div class="w-full md:w-auto">
+                <h3 class="md:text-2xl  font-semibold text-white mb-4 text-lg">Our Branch</h3>
+                <ul class="space-y-2 md:space-y-3 font-medium text-base  grid trusted">
+                    <a href="#" class="pages text-sm md:text-base">Melbourne</a>
+                    <a href="#" class="pages text-sm md:text-base">London</a>
+                    <a href="#" class="pages text-sm md:text-base">New York</a>
+                    <a href="#" class="pages text-sm md:text-base">San Francisco</a>
+                    <a href="#" class="pages text-sm md:text-base">Ontario</a>
+                    
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8">
+            <p class="md:text-left text-center text-[#BDBDBD] text-base font-normal">Copyright © thrive. All rights
+                reserved</p>
+        </div>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
